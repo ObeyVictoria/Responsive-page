@@ -1,0 +1,263 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	place-items: center;
+	margin: auto;
+	width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: hsl(208, 11%, 55%);
+}
+header {
+	background-color: hsl(193, 100%, 96%);
+	background-image: url('bg-hero-desktop.svg');
+}
+h3 {
+	font-family: 'Poppins', sans-serif;;
+}
+h2 {
+	font-family: 'Poppins', sans-serif;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.top {
+	padding: 5%;
+}
+.div1 {
+	display: flex;
+	justify-content: space-between;
+}
+.logo1 {
+	width: 110px;
+	height: 25px;
+}
+button {
+	border-radius: 18px;
+	border: none;
+	box-shadow: 0 0 3px -1px;
+	font-family: 'Open Sans', sans-serif;
+}
+.sidebutton {
+	background-color: white;
+	width: 122px;
+	height: 27px;
+}
+.div2 {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+	color: hsl(192, 100%, 9%);
+}
+.head-div {
+	align-self: center;
+	width: 40%;
+}
+.head-div p {
+    margin-top: 4%;
+}
+.head-div button {
+	width: 167px;
+	height: 33px;
+	background-color: hsl(322, 100%, 66%);
+	margin-top: 4%;
+	color: hsl(208, 11%, 55%);
+}
+.main {
+	margin: 2% 5%;
+	border-radius: 3px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 2% 3% 5%;
+}
+.main .text {
+	width: 40%;
+}
+.main h3 {
+	margin-bottom: 2%;
+	color: hsl(192, 100%, 9%);
+}
+#firstmain {
+	margin-top: 7%;
+}
+#lastmain {
+	margin-bottom: 10%;
+}
+.overlay {
+	border-radius: 5px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	width: 29%;
+	background-color: white;
+	align-items: center;
+	text-align: center;
+	margin-left: 35%;
+	position: absolute;
+	margin-top: -5%;
+}
+.overlay h3 {
+	width: 100%;
+	margin: 4%;
+	color: hsl(192, 100%, 9%);
+}
+.overlay button {
+	padding: 2% 13%;
+	background-color: hsl(322, 100%, 66%);
+	margin-bottom: 6%;
+	margin-left: 3%;
+	margin-right: 3%;
+	color: hsl(208, 11%, 55%);
+}
+footer {
+	background-color: hsl(192, 100%, 9%);
+}
+.address {
+	padding: 5%;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    color: hsl(208, 11%, 55%);
+    position: relative;
+}
+.logo2 {
+	filter: brightness(0) invert(1);
+	width: 120px;
+	margin-bottom: 1%;
+}
+.icon {
+	filter: brightness(0) invert(1);
+	width: 15px;
+}
+.address1 {
+	width: 25%;
+}
+.contact {
+	margin: 7% 1% 0 0;
+	
+}
+.contact span {
+	display: block;
+	margin-left: 9%;
+	margin-top: -8%;
+	font-size: 11px;
+}
+.address2 p {
+	margin-top: 13%;
+	font-size: 11px;
+}
+.address3 p {
+	margin-top: 13%;
+	font-size: 11px;
+}
+.address4 {
+	width: 25%;
+	font-size: 11px;
+}
+.copyright {
+	margin-left: 75%;
+	font-size: 9px;
+}
+@media screen and (min-width:1350px) {
+	body{
+		display: flex;
+	}
+    .container{
+	    display: flex;
+        width: 90%;
+        background-color: white;
+    }
+    .section1{
+    	align-self: flex-end;
+    	background-color: white;
+    	box-shadow: 0 0 2px 2px;
+    	border: none;
+    	order: 2;
+    	margin-left: -13%;
+    }
+    .section2{
+    	align-self: flex-start;
+    	margin-bottom: 10%;
+    	background-color: white;
+    	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    	border: none;
+    	order: 1;
+    }
+    .overlay{
+    	margin-left: 7%;
+    	margin-top: -7%;
+    }
+    .container:hover {
+
+    }
+}
+@media screen and (min-width:1100px) {
+	.section1 {
+	animation: transition 0.7s;
+}
+.section2 {
+	animation: transition2 1s;
+}
+@keyframes transition {
+	from {
+       opacity: 0;
+       transform: rotate(-90deg);
+	}
+	to {
+        opacity: 1;
+        transform: rotateY(0);
+	}
+}
+@keyframes transition2 {
+	from {
+       opacity: 0;
+       transform: rotate(90deg);
+	}
+	to {
+        opacity: 1;
+        transform: rotateY(0);
+	}
+}
+}
+@media screen and (max-width:720px) {
+	body{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.div2{
+		flex-direction: column;
+	}
+	.main{
+		flex-direction: column;
+	}
+	.overlay{
+		width: 50%;
+		margin-top: -15%;
+		margin-left: 26%;
+	}
+	.address{
+		display: block;
+	}
+	.div2 img{
+		width: 150px;
+	}
+	.icon{
+		display: block;
+	}
+}
+@media screen and (max-width:450px) {
+	header{
+		background-image: url('bg-hero-mobile.svg');
+	}
+	.main img{
+		width: 200px;
+	}
+}
